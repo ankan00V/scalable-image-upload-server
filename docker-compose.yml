@@ -11,8 +11,6 @@ services:
       - S3_BUCKET_NAME=${S3_BUCKET_NAME}
     ports:
       - "3001:3001"
-    env_file:
-      - .env
 
   app2:
     build: .
@@ -24,8 +22,6 @@ services:
       - S3_BUCKET_NAME=${S3_BUCKET_NAME}
     ports:
       - "3002:3002"
-    env_file:
-      - .env
 
   nginx:
     image: nginx:latest
