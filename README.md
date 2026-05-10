@@ -100,4 +100,4 @@ curl -X POST http://localhost/upload \
   "serverPort": "3001" 
 }
 ```
-*Note: The `serverPort` toggles between `3001` and `3002` on subsequent requests, proving the NGINX round-robin functionality is active.*
+*Please note that the `serverPort` toggles between `3001` and `3002` on subsequent requests, proving the NGINX round-robin functionality is active.*
